@@ -1,0 +1,57 @@
+{
+  "name": "cache-blob-store",
+  "version": "1.0.0",
+  "description": "Blob store for caching online resources locally",
+  "main": "index.js",
+  "browser": {
+    "./lib/store.js": "./lib/store-browser.js",
+    "./test/common.js": "./test/common-browser.js"
+  },
+  "scripts": {
+    "test": "standard && node test/*.js",
+    "test-browser": "browserify test/abstract.js | browser-run -b chrome"
+  },
+  "keywords": [
+    "blob",
+    "store",
+    "indexeddb",
+    "cache",
+    "image"
+  ],
+  "author": "Gregor MacLennan / Digital Democracy",
+  "license": "MIT",
+  "devDependencies": {
+    "abstract-blob-store": "^3.2.0",
+    "browser-run": "^3.0.5",
+    "browserify": "^12.0.1",
+    "rimraf": "^2.5.0",
+    "standard": "^5.4.1",
+    "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "blob-to-buffer": "^1.2.3",
+    "btoa": "^1.1.2",
+    "btoa-lite": "^1.0.0",
+    "collect-stream": "^1.1.1",
+    "content-addressable-blob-store": "^4.2.1",
+    "idb-content-addressable-blob-store": "^1.1.0",
+    "level-browserify": "^1.1.0",
+    "levelup-defaults": "^1.0.2",
+    "object-assign": "^4.0.1",
+    "read-only-stream": "^2.0.0",
+    "sha.js": "^2.4.4",
+    "through2": "^2.0.0",
+    "write-only-stream": "^1.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digidem/cache-blob-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digidem/cache-blob-store/issues"
+  },
+  "homepage": "https://github.com/digidem/cache-blob-store"
+}
