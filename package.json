@@ -29,6 +29,7 @@
     "tape": "^4.2.2"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "blob-to-buffer": "^1.2.3",
     "btoa": "^1.1.2",
     "btoa-lite": "^1.0.0",
